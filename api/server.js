@@ -9,7 +9,7 @@ import router from './routes/index.js';
 dotenv.config();
 mongoDb();
 const app = express();
-const port = 3000;
+const port = process.env.port;
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
